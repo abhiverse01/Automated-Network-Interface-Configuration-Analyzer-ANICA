@@ -1,0 +1,43 @@
+interface TenGigE0/0/0/3
+ description connected to UPE6-MURBRDBY-1 Interface TenGigabitEthernet11/1
+ cdp
+ carrier-delay up 2000 down 0
+ dampening 2 250 2000 10
+interface TenGigE0/0/0/3.146
+ l2transport
+ l2transport encapsulation dot1q 146
+ l2transport rewrite ingress tag pop 1 symmetric
+ l2transport ethernet-services access-group l2acl_pvst_block ingress
+ l2transport ethernet-services access-group l2acl_pvst_block egress
+interface TenGigE0/0/0/3.149
+ l2transport
+ l2transport encapsulation dot1q 149
+ l2transport rewrite ingress tag pop 1 symmetric
+ l2transport ethernet-services access-group l2acl_pvst_block ingress
+ l2transport ethernet-services access-group l2acl_pvst_block egress
+interface TenGigE0/0/0/4
+ description connected to another device
+ l2transport
+interface TenGigE0/0/0/5
+ l2transport
+ l2transport encapsulation dot1q 100
+ l2transport rewrite ingress tag pop 1 symmetric
+
+l2vpn bridge group Metro-Mgmt bridge-domain Metro-Mgmt
+ storm-control broadcast pps 900
+ interface TenGigE0/0/0/3.1700
+ interface TenGigE0/1/0/3.1700
+ interface TenGigE0/2/0/2.1700
+ interface TenGigE0/2/0/3.1700
+ routed interface BVI1700
+
+interface BVI1700
+ description Metro Ethernet Management vlan
+ vrf Metro-Mgmt
+ ipv4 address 10.188.111.161 255.255.255.224
+ ipv4 address 10.140.96.1 255.255.255.224 secondary
+ ipv4 address 192.168.160.69 255.255.255.192 secondary
+ ipv4 address 192.168.161.1 255.255.255.192 secondary
+ ipv4 unreachables disable
+ flow ipv4 monitor Monitor_Stealthwatch sampler Sampler_Stealthwatch ingress
+ flow ipv4 monitor Monitor_Stealthwatch sampler Sampler_Stealthwatch egress

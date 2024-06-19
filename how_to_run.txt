@@ -1,0 +1,67 @@
+How to Run the Automated Network Interface Configuration Analyzer (ANICA)
+=========================================================================
+
+--------------
+Prerequisites:
+--------------
+1. Ensure you have Python installed on your system.
+2. Install the required Python packages using the following command: 
+
+>> pip install -r requirements.txt
+---------------------------------------------------------------------------
+
+-------------
+Steps to Run:
+-------------
+
+--------------------------------
+Step 1: Prepare the input files:
+--------------------------------
+- An Excel file containing the interfaces (e.g., `interfaces_xxxxx.xlsx`).
+- A text file containing the network configuration (e.g., `run_formal_xxxxxx.txt`).
+
+------------------------------------------
+Step 2: Open a terminal or command prompt:
+------------------------------------------
+
+---------------------------------------------------------
+3. Navigate to the directory where the script is located.
+---------------------------------------------------------
+
+----------------------------------------------
+4. Run the script using the following command: 
+----------------------------------------------
+
+>> python index.py --interfaces_file <path_to_your_interfaces_file> --config_file <path_to_your_config_file>
+
+Note:
+Replace `path_to_your_interfaces_file` with the path to your Excel file containing interfaces.
+Replace `path_to_your_config_file` with the path to your network configuration text file.
+
+--------
+Example: 
+--------
+If your files are named `interfaces_20230620.xlsx` and `run_formal_20230620.txt`, the command would be:
+
+>> python index.py --interfaces_file interfaces_20230620.xlsx --config_file run_formal_20230620.txt
+-------------------------------------------------------------------------------------------------------
+
+-------
+Output:
+-------
+The script will generate an output Excel file in the same directory with a name in the format:
+`output_interfaces_<config_file_base_name>_<timestamp>.xlsx`
+
+The output file will contain:
+- A sheet named 'Interfaces' with the interfaces and their descriptions.
+- A sheet named 'BVI Interfaces' with the BVI interfaces found.
+- A sheet named 'BVI Details' with the BVI interface details and their associated bridge domains.
+
+----------------
+Troubleshooting:
+----------------
+- Ensure the input files are in the correct format and paths are correctly specified.
+- Check the console output for any error messages and resolve any issues indicated.
+
+For further assistance, refer to the script documentation.
+----------------------------------------------------------------------------------------------------
