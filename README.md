@@ -48,7 +48,7 @@ cd Automated-Network-Interface-Configuration-Analyzer-ANICA-
 <p><strong>Apply the recommended configurations if needed.</strong></p>
 
 <h2 id="configuration">Configuration</h2>
-<p>ANICA allows you to customize its behavior through a configuration file. Modify <code>config.yaml</code> to suit your needs.</p>
+<p>ANICA allows you to customize its behaviour through a configuration file. Modify <code>config.yaml</code> to suit your needs.</p>
 <p>Example <code>config.yaml</code>:</p>
 <pre><code>network_interfaces:
   - eth0
@@ -58,12 +58,6 @@ logging:
   file: anica.log
 </code></pre>
 
-<h2 id="screenshots">Screenshots</h2>
-<p><img src="screenshots/screenshot1.png" alt="Screenshot 1" /></p>
-<p><img src="screenshots/screenshot2.png" alt="Screenshot 2" /></p>
-
-<h2 id="contributing">Contributing</h2>
-<p>We welcome contributions! Please read our <a href="CONTRIBUTING.md">Contributing Guidelines</a> for details on the code of conduct, and the process for submitting pull requests.</p>
 
 <h2 id="license">License</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
@@ -72,6 +66,4 @@ logging:
 <p>For any inquiries or feedback, please reach out to:</p>
 <p><strong>Name:</strong> Abhishek Shah</p>
 <p><strong>Email:</strong> <a href="mailto:abhishekshah007@gmail.com">abhishekshah007@gmail.com</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/abhiverse01">abhiverse01</a></p>
-
 
