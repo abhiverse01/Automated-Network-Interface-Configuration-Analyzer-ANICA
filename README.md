@@ -1,55 +1,77 @@
-# Automated Network Interface Configuration Analyzer (ANICA)
+<h1>Automated Network Interface Configuration Analyzer (ANICA)</h1>
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#configuration">Configuration</a></li>
+  <li><a href="#screenshots">Screenshots</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
 
-## Introduction
-Automated Network Interface Configuration Analyzer (ANICA) is a tool designed to automate the analysis and configuration of network interfaces. This project aims to simplify network management by providing a user-friendly interface and robust automation capabilities.
+<h2 id="introduction">Introduction</h2>
+<p>Automated Network Interface Configuration Analyzer (ANICA) is a tool designed to automate the analysis and configuration of network interfaces. This project aims to simplify network management by providing a user-friendly interface and robust automation capabilities.</p>
 
-## Features
-- Automated analysis of network interface configurations
-- Configuration suggestions based on best practices
-- User-friendly interface
-- Detailed logging and reporting
-- Support for multiple network interface types
+<h2 id="features">Features</h2>
+<ul>
+  <li>Automated analysis of network interface configurations</li>
+  <li>Configuration suggestions based on best practices</li>
+  <li>User-friendly interface</li>
+  <li>Detailed logging and reporting</li>
+  <li>Support for multiple network interface types</li>
+</ul>
 
-## Installation
-To install and set up ANICA, follow these steps:
+<h2 id="installation">Installation</h2>
+<p>To install and set up ANICA, follow these steps:</p>
+<p><strong>Clone the repository:</strong></p>
+<pre><code>git clone https://github.com/abhiverse01/Automated-Network-Interface-Configuration-Analyzer-ANICA-.git
+cd Automated-Network-Interface-Configuration-Analyzer-ANICA-
+</code></pre>
+<p><strong>Install dependencies:</strong></p>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+<p><strong>Run the application:</strong></p>
+<pre><code>python index.py --interfaces_file &lt;path_to_your_interfaces_file&gt; --config_file &lt;path_to_your_config_file&gt;
+</code></pre>
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/abhiverse01/Automated-Network-Interface-Configuration-Analyzer-ANICA-.git
-   cd Automated-Network-Interface-Configuration-Analyzer-ANICA-
-2. **Install Dependencies:**
-   ```sh
-   pip install -r requirements.txt
-3. **Run The Application**
-   ```sh
-   python index.py --interfaces_file <path_to_your_interfaces_file> --config_file <path_to_your_config_file>
+<h2 id="usage">Usage</h2>
+<p>To use ANICA, follow these steps:</p>
+<p><strong>Start the application:</strong></p>
+<pre><code>python index.py --interfaces_file &lt;path_to_your_interfaces_file&gt; --config_file &lt;path_to_your_config_file&gt;
+</code></pre>
+<p><strong>Select the network interface you want to analyze.</strong></p>
+<p><strong>Review the analysis report and configuration suggestions.</strong></p>
+<p><strong>Apply the recommended configurations if needed.</strong></p>
 
-## Usage
-To use ANICA, follow these steps:
+<h2 id="configuration">Configuration</h2>
+<p>ANICA allows you to customize its behavior through a configuration file. Modify <code>config.yaml</code> to suit your needs.</p>
+<p>Example <code>config.yaml</code>:</p>
+<pre><code>network_interfaces:
+  - eth0
+  - wlan0
+logging:
+  level: INFO
+  file: anica.log
+</code></pre>
 
-1. **Start the Application.**
-   ```sh
-   python index.py --interfaces_file <path_to_your_interfaces_file> --config_file <path_to_your_config_file>
-2. **Select the network interface you want to analyze.**
-3. **Review the analysis report and configuration suggestions.**
-4. **Apply the recommended configurations if needed.**
+<h2 id="screenshots">Screenshots</h2>
+<p><img src="screenshots/screenshot1.png" alt="Screenshot 1" /></p>
+<p><img src="screenshots/screenshot2.png" alt="Screenshot 2" /></p>
 
-## Contributing
-We welcome contributions! Please read our Contributing Guidelines for details on the code of conduct, and the process for submitting pull requests.
+<h2 id="contributing">Contributing</h2>
+<p>We welcome contributions! Please read our <a href="CONTRIBUTING.md">Contributing Guidelines</a> for details on the code of conduct, and the process for submitting pull requests.</p>
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
-## Contact
-For any inquiries or feedback, please reach out to: [mailto:www.abhishekshah007@gmail.com]
+<h2 id="contact">Contact</h2>
+<p>For any inquiries or feedback, please reach out to:</p>
+<p><strong>Name:</strong> Abhishek Shah</p>
+<p><strong>Email:</strong> <a href="mailto:abhishekshah007@gmail.com">abhishekshah007@gmail.com</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/abhiverse01">abhiverse01</a></p>
+
+
